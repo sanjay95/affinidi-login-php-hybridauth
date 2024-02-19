@@ -1,0 +1,18 @@
+{
+  "name": "parameshkamarthi/hybrid-auth-test",
+  "autoload": {
+    "psr-4": {
+      "Parameshkamarthi\\HybridAuthTest\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Paramesh Kamarthi",
+      "email": "kamarthiparamesh@gmail.com"
+    }
+  ],
+  "require": {
+    "hybridauth/hybridauth": "~3.0",
+    "affinidi/laravel-hybridauth-affinidi": "^1.3"
+  }
+}
