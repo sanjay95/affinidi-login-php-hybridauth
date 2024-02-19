@@ -17,16 +17,9 @@ foreach($lines as $line){
 if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
     return false;    // serve the requested resource as-is.
 } elseif ( $_SERVER["PHP_SELF"] == '/') { 
-    // for windows 
-    //require_once('src\index.php');
-
-    //MAC
-    require_once('src/index.php');
+    require_once('src\index.php');
 } else { 
-  //for  window
-  // require_once('src\\' . $_SERVER["PHP_SELF"]);
 
-  //MAC
-    require_once('src//' . $_SERVER["PHP_SELF"]);
+  require_once('src\\' . $_SERVER["PHP_SELF"]);
 }
 ?>
