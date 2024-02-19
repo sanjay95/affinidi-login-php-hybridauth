@@ -13,9 +13,9 @@ https://hybridauth.github.io/
 
 ## Setup & Run application
 
-Open the generated app in VS code or your favourite editor
+Open the generated app in VS code or your favorite editor
 
- 1. Install the dependencies by executing the below command in terminal
+ 1. Install the dependencies by executing the below command in the terminal
     ```
     composer install
     ```
@@ -23,7 +23,7 @@ Open the generated app in VS code or your favourite editor
     ```
     cp .env.example .env
     ```
- 3. Create [Affinidi Login Configuration](https://docs.affinidi.com/docs/affinidi-login/login-configuration/#create-login-configuration) by giving name as `PHP App` and `Redirect URIs` as `http://localhost:8000/callback.php`. Sample response is given below
+ 3. Create [Affinidi Login Configuration](https://docs.affinidi.com/docs/affinidi-login/login-configuration/#create-login-configuration) by giving the name as `PHP` App` and `Redirect URIs` as `http://localhost:8000/callback.php`. The sample response is given below
     ```
     {
         ...
@@ -39,12 +39,7 @@ Open the generated app in VS code or your favourite editor
 
 
  4. Update below environment variables in `.env` based on the auth credentials received from the Login Configuration created earlier:
-    ```
-    PROVIDER_CLIENT_ID="<AUTH.CLIENT_ID>"
-    PROVIDER_CLIENT_SECRET="<AUTH.CLIENT_SECRET>"
-    PROVIDER_ISSUER="<AUTH.CLIENT_ISSUER>"
-    ```
-    Sample values looks like below
+Sample values look like below
     ```
     PROVIDER_CLIENT_ID="xxxxx-xxxxx-xxxxx-xxxxx-xxxxx"
     PROVIDER_CLIENT_SECRET="xxxxxxxxxxxxxxx"
@@ -54,6 +49,5 @@ Open the generated app in VS code or your favourite editor
     ```
     php -S localhost:8000 router.php
     ```
-6. Open the [http://localhost:8000/](http://localhost:8000/), which displays login page 
-    **Important**: You might error on redirect URL mismatch if you are using `http://127.0.0.1:8000/` instead of `http://localhost:8000/`. 
-7. Click on `Affinidi Login` button to initiate OAuth2 login flow with Affinidi Vault
+6. Open the [http://localhost:8000/](http://localhost:8000/), which displays the login page **Important****: You might error on redirect URL mismatch if you are using `http://127.0.0.1:8000/` instead of `http://localhost:8000/`. 
+7. Click on the `Affinidi Login` button to initiate the OAuth2 login flow with the Affinidi Vault
